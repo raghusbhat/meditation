@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raghu Bhat">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tailwind, UI/UX">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAjCAYAAADxG9hnAAAACXBIWXMAABcRAAAXEQHKJvM/AAAELklEQVRYhe1YbWiTVxR+aktLa2LjB7WrDS2DqQgVmW2HFXRspaCgdBs4qA1UVKSCIFIq0g0nKoNShiCy+WMgiwgOdOsGCqXaWXSCFX8oflQRDa2fGJc0saVqiDzH3Ou9+Wxx0/zYAyH3fd97z33ec55zzk1yotEobpZ7WgA0AnDh3eIvAPvmDnsDeTfLPd8B2PmOCSgsjzlgUc7gnOboeyJhYt2ULCBBVGYLEeTF3yhcVYEXvn/w8vKIPXHhNMxo+Rx5c0rx8t5DhPouYexPH3JLCzBr9xqZ49/fnbCuYNlsuDwNcCypRa7Lhec+H0K9/Qj8eAaRh+PJiZT88AVca76U8VDrN7KRIlf2fZsYUuA8f7UXuc6pKF7RIHfzyz/A0IpOPcfRNB9lnR0yDp7skW/Onbneg7yy2Xi00avnWqFRJIjpzSu1J0giEgzC19QmBBVo0FxTWFVleZYkIoGArOGmI3/06+eKfFIiyVDSsVY88WDHfoz3P9JeUgif+zthGcNF8sTw5j16TVH1PD2HBCdEJDISlvg6ltYh8OtxIZEJyrirdbmQf7zvoF5Hcq6vVmkLoZ7TEyMSDYVFZMTTQ6est01JPhiU5wwZRRnoOqufUdBKYyRs2kxLJMfpkDjS9WYm5NeUpvWLs7lGvv2/HNf3mARKEyRxf0dXYlamMsh0I0a6+6z7Zpxl3tI6+3lNlWw22n1Vsma6Z7UWMb2ktBaPlESUG8dO37HfuH6ZdU2PKTK5xcVwVFTIuLK3y0p3khhu7UzwhELarOEmZtFhSubHNoJRG+LJx48JrvvwxAHM3GWn7YSIjA5csa5nbf7aumYlTYb77Xt5tMDt6g1SQ/w/e3VGUchlR1snR2Tswi09dm762CpYTM1Ubg4fuSHf9CZrCMu5/9BR/ZyhpD0TKTVCKFExJCVb1un7DImZmhb5K2+8yDpU3FgHZ8NnCaFyNdYjdPCSvk5LpPLcHoxdG7TKMUmYPSKB/PVbr2tJ+0op/xQpvRHuuSwaUTC9m5EIBabESYNPDhzWbk+FSOgZ3Me+lXUMn/IcvZMOKTXCjKEhBXomEwnExMg0pkjN8BXWfmTNM0OITGKlISoesW5Jtacr8QoMhdkcJVQtdsaFTtnNMm1oCP/OHhTVLpKYUu2FvQtko/HBIRTMcyddQz2YMPsMYmEOHR6YHBHiwfafUHFkrxjjp2TrpjebJjkGaOMLp8kxwmwDrCcs82ahRHxo2O4Vxm/c1mPWC19TR8IZIhVI2n2yXbLEJEFd8HySsdc83vYbRi9ef/2mccIkmbv1bZKWRZ8slqygN1h91WZ8Ea5no8t3u7UHwucv4FnfQFqx/yu/a9hlk5GfBHZNSCOZ8BYENLLmd83/ROIQIJEz75lEEMDvU2J/CyQ/4fz3YB/4dO6w9678UZMNyA6NAHgFU3jIotcubEIAAAAASUVORK5CYII=" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Mind-e</title>
+  <script type="module" crossorigin src="/assets/index.f2fbc05f.js"></script>
+    <link rel="stylesheet" href="/assets/index.080d7d8c.css">
+  </head>
+
+<body class="bg-gray-100">
+
+ 
+  <div  class="container mx-auto max-w-screen-lg">   <!-- Body wrapper start -->
+
+  <!-- Navbar container -->
+  <div class="container mx-auto bg-white flex flex-col md:flex-row justify-between m-1 shadow-sm rounded-md">
+  
+    <div class="flex flex-row justify-between m-1 ">
+      
+      <!-- logo -->
+      <svg width="153" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="22" r="19" fill="#D6ABFF"/><circle cx="19" cy="22" r="15" fill="#9A2EFF"/><path d="M18.827 15.575c1.052 0 1.9-1.026 1.9-2.289 0-1.262-.85-2.286-1.9-2.286-1.05 0-1.9 1.024-1.9 2.286 0 1.263.85 2.29 1.9 2.29zM23.9 29.78c-.34.052-.83-.192-1.18-.226a5.632 5.632 0 00-1.262.06 9.734 9.734 0 00-4.62 1.884 10.331 10.331 0 016.643 0c1.49.495 4.883 1.292 5.436-1.444.673-3.492-6.13-2.723-7.63-2.716l-.445.103a5.02 5.02 0 012.55.713c.305.202.567.462.77.766.232.389.159.794-.262.86z" fill="#fff"/><path d="M15.18 31.43l.414-.137c1.2-.371 2.246-1.358 3.52-1.676.928-.23 2.507-.474 3.683-.34a.652.652 0 00.69-.263c.052-.76-2.876-1.455-3.997-1.644 1.031-.108 2.863-.652 3.665-.753-.045.048-.49-.73-.947-1.628-.526-1.024-1.053-2.2-1.053-2.497.024-.784.137-1.562.337-2.32.263 1.052.74 1.915 1.052 3.283.735 3.157 1.14 2.926 5.139 3.778.968.205 1.378 1.79 1.734 1.734.963-.153.42-1.465-.153-1.942-.873-.726-.905-.605-1.95-1.02-.286-.114-2.483-1.119-2.575-1.44 0 .045 0 .05-.016 0l-.279-.442c-.623-1.884-.85-1.912-1.19-3.87-.136-.805 0-2.189-.51-2.723l-.039-.034a.327.327 0 00.026-.04c-1.226-.702-2.078-1.052-3.562-1.123h-.105a6.522 6.522 0 00-2.979.79.681.681 0 00-.37.152.917.917 0 00-.132.118l-.097.055.023.035c-.526.67-.56 2.055-.684 2.775-.34 1.958-.565 1.987-1.186 3.87l-.292.427c-.027.055-.03.05-.016 0-.092.32-2.29 1.315-2.576 1.439-1.052.416-1.076.295-1.95 1.02-.586.477-1.294 1.79-.33 1.945.354.055.93-1.529 1.899-1.734 3.999-.855 4.404-.615 5.14-3.791.319-1.376.79-2.244 1.053-3.302.126.655.198 1.32.216 1.986.04 1.216-.337 1.879-.79 2.873-.313.71-.35 1.398-.636 1.792-2.458.219-7.672.808-5.675 3.712 1.447 2.082 3.615 1.584 5.498.934z" fill="#fff"/><path d="M63.533 29.12l1.296-.36c.72 0 1.08.36 1.08 1.08 0 .528-.324.9-.972 1.116-.647.216-1.115.324-1.404.324-1.151 0-2.028-.72-2.627-2.16-.337-.792-.624-2.46-.864-5.004a335.244 335.244 0 00-.648-6.876c-.192-2.064-.444-3.096-.756-3.096-.288 0-.648 1.668-1.08 5.004-.096.792-.18 1.476-.252 2.052-.048.552-.133 1.26-.252 2.124-.096.84-.169 1.452-.217 1.836-.192 1.608-.492 2.796-.9 3.564-.407.744-1.067 1.116-1.98 1.116-1.151 0-2.028-.72-2.627-2.16-.36-.792-.852-2.424-1.477-4.896-.6-2.496-1.163-4.74-1.692-6.732-.504-1.992-.852-2.988-1.044-2.988-.311 0-.575 2.352-.791 7.056-.193 4.68-.288 8.292-.288 10.836 0 .696-.36 1.044-1.08 1.044-.384 0-.66-.108-.828-.324-.169-.24-.253-.48-.253-.72 0-2.304.084-5.604.252-9.9.193-4.32.42-6.984.684-7.992.384-1.44 1.14-2.16 2.268-2.16s1.956.72 2.484 2.16c.288.768.733 2.436 1.333 5.004A195.035 195.035 0 0052.66 24.8c.553 1.92.972 2.88 1.26 2.88.313 0 .565-.912.757-2.736.816-6.528 1.344-10.128 1.584-10.8.215-.672.492-1.2.828-1.584.36-.384.875-.576 1.547-.576 1.152 0 1.98.72 2.484 2.16.192.48.384 2.004.576 4.572.192 2.568.432 4.944.72 7.128s.66 3.276 1.116 3.276zm9.545-14.976c.384 0 .78.18 1.188.54.408.336.612.696.612 1.08 0 .36-.168.636-.504.828-.312.192-.66.288-1.044.288s-.708-.168-.972-.504a2.04 2.04 0 01-.36-1.152c0-.72.36-1.08 1.08-1.08zm-3.24 13.392c-1.344 1.44-2.712 2.472-4.104 3.096-.432.192-.78.288-1.044.288-.72 0-1.08-.36-1.08-1.08 0-.456.36-.828 1.08-1.116.384-.144.888-.432 1.512-.864.648-.432 1.08-.756 1.296-.972.216-.216.588-.612 1.116-1.188.552-.576.984-1.008 1.296-1.296.312-.312.732-.624 1.26-.936.552-.312 1.056-.468 1.512-.468.936 0 1.656.336 2.16 1.008.504.672.804 1.416.9 2.232.264 2.16.684 3.24 1.26 3.24.456 0 1.044-.12 1.764-.36s1.116-.36 1.188-.36c.72 0 1.08.36 1.08 1.08 0 .528-.36.912-1.08 1.152-1.296.432-2.352.648-3.168.648-.792 0-1.44-.336-1.944-1.008a4.547 4.547 0 01-.9-2.232c-.264-2.16-.684-3.24-1.26-3.24-.312 0-.672.204-1.08.612l-.936.936c-.24.216-.516.492-.828.828zm32.793 3.456c-1.296.432-2.304.648-3.024.648-.72 0-1.284-.264-1.692-.792-.408-.528-.78-1.428-1.116-2.7-.312-1.272-.552-1.908-.72-1.908-.624 0-1.284.96-1.98 2.88-.264.72-.696 1.38-1.296 1.98-.6.6-1.356.9-2.268.9-.888 0-1.584-.396-2.088-1.188a5.881 5.881 0 01-.9-2.592c-.072-.936-.192-1.8-.36-2.592-.168-.792-.444-1.188-.828-1.188-.264 0-.456.072-.576.216-.12.144-.228.288-.324.432-.072.12-.156.252-.252.396-.072.12-.168.288-.288.504a6.358 6.358 0 01-.36.684c-.48.84-.864 1.464-1.152 1.872-.576.912-1.428 1.608-2.556 2.088-.432.192-.78.288-1.044.288-.72 0-1.08-.36-1.08-1.08 0-.456.384-.828 1.152-1.116.768-.288 1.308-.696 1.62-1.224.336-.552.708-1.176 1.116-1.872.408-.696.684-1.164.828-1.404.168-.24.372-.528.612-.864.24-.36.456-.588.648-.684a3.514 3.514 0 011.656-.396c.984 0 1.728.396 2.232 1.188a5.55 5.55 0 01.864 2.592c.096.936.228 1.8.396 2.592s.444 1.188.828 1.188c.384 0 .744-.3 1.08-.9.36-.6.672-1.26.936-1.98s.684-1.38 1.26-1.98c.6-.6 1.308-.9 2.124-.9.624 0 1.08.156 1.368.468.288.288.492.516.612.684.144.168.264.42.36.756.12.336.204.588.252.756.048.144.12.408.216.792.288 1.32.552 1.968.792 1.944.456 0 1.044-.12 1.764-.36s1.116-.36 1.188-.36c.72 0 1.08.36 1.08 1.08 0 .528-.36.912-1.08 1.152zm5.612-18.252c-.432-.6-.648-1.212-.648-1.836 0-.624.204-1.164.612-1.62a3.33 3.33 0 011.584-.936 27.478 27.478 0 012.232-.468 41.14 41.14 0 012.196-.324c1.632-.192 2.496-.288 2.592-.288.12-.024.288-.036.504-.036.72 0 1.08.36 1.08 1.08 0 .192-.096.408-.288.648-.192.24-.384.372-.576.396-.192.024-.612.084-1.26.18-.624.072-1.272.156-1.944.252-.672.072-1.368.168-2.088.288-1.656.288-2.484.564-2.484.828 0 .192.432.816 1.296 1.872a845.577 845.577 0 013.024 3.636c1.176 1.392 2.016 2.508 2.52 3.348.528.816.792 1.74.792 2.772 0 1.008-.372 2.148-1.116 3.42a11.417 11.417 0 01-2.664 3.168 17.42 17.42 0 01-3.204 2.088c-1.104.528-2.124.792-3.06.792-.912 0-1.704-.3-2.376-.9-.648-.6-.972-1.38-.972-2.34 0-2.568.816-4.632 2.448-6.192 1.656-1.584 3.384-2.376 5.184-2.376.336 0 .864.06 1.584.18.72.12 1.212.252 1.476.396-.48-.792-1.56-2.172-3.24-4.14-1.68-1.992-2.748-3.288-3.204-3.888zm6.876 10.476c-.384-.192-.96-.384-1.728-.576-.768-.192-1.356-.288-1.764-.288-1.176 0-2.388.576-3.636 1.728-1.224 1.128-1.836 2.688-1.836 4.68 0 .336.144.6.432.792.288.192.672.288 1.152.288.48 0 1.2-.252 2.16-.756.984-.504 2.004-1.284 3.06-2.34 1.056-1.08 1.776-2.256 2.16-3.528zm19.853 2.304c0 .72-.36 1.08-1.08 1.08-.048 0-.612-.06-1.692-.18s-1.956-.18-2.628-.18c-2.16 0-3.828.204-5.004.612a2.393 2.393 0 01-.756.108c-.72 0-1.08-.348-1.08-1.044 0-.504.36-.876 1.08-1.116 1.44-.48 3.36-.72 5.76-.72.72 0 2.16.12 4.32.36.72.096 1.08.456 1.08 1.08zm4.552 4.392c-.024 0-.204.096-.54.288-.864.48-1.5.72-1.908.72-.72 0-1.08-.36-1.08-1.08 0-.456.36-.828 1.08-1.116.12-.048.408-.192.864-.432s.72-.384.792-.432c-.096-.216-.144-.54-.144-.972 0-2.16.756-4.008 2.268-5.544 1.512-1.536 2.892-2.304 4.14-2.304 1.248 0 2.232.3 2.952.9.72.576 1.08 1.284 1.08 2.124 0 .816-.192 1.524-.576 2.124-.384.6-.984 1.188-1.8 1.764-1.128.816-2.772 1.764-4.932 2.844.96.696 2.292 1.044 3.996 1.044 1.704 0 3.384-.276 5.04-.828.504-.168.792-.252.864-.252.72 0 1.08.36 1.08 1.08 0 .528-.36.912-1.08 1.152-2.016.672-3.96 1.008-5.832 1.008-2.664 0-4.752-.696-6.264-2.088zm1.224-3.024c4.08-2.04 6.12-3.576 6.12-4.608 0-.72-.6-1.08-1.8-1.08-.72 0-1.62.576-2.7 1.728-1.08 1.128-1.62 2.448-1.62 3.96z" fill="#9A2EFF"/>
+        </svg>
+         
+        <!-- hamburger icon for mobile menu -->
+        <button class="border-2 border-gray-200 shadow-sm rounded-md md:hidden" id="hamburger" onclick="menu()" >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand  m-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+        </button>
+    </div>
+  
+     <!-- divider for mobile menu -->
+    <hr>
+  
+
+    <!-- menu -->
+    <div class="flex flex-col md:flex-row" id="mainMenu">
+      <div class="inline-flex items-center rounded-lg m-1 px-2 py-1 hover:bg-brand hover:text-white transform transition text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current subpixel-antialiased" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <div class="subpixel-antialiased"><a href="">Home</a></div>
+      </div>    
+
+      <div class="inline-flex items-center rounded-lg m-1 px-2 py-1 hover:bg-brand hover:text-white transform transition text-gray-800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current subpixel-antialiased" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <div class="subpixel-antialiased"><a href="">Services</a>
+        </div>
+      </div>
+
+      <div class="inline-flex items-center rounded-lg m-1 px-2 py-1 hover:bg-brand hover:text-white transform transition text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current subpixel-antialiased" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          <div class="text-end"><a href="">Articles</a>
+          </div>
+      </div>
+
+      <div class="inline-flex items-center rounded-lg m-1 px-2 py-1 hover:bg-brand hover:text-white transform transition text-gray-800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current subpixel-antialiased" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+          </svg>
+        <div class="text-end"><a href="">About</a>
+        </div>
+      </div>
+    </div>
+  
+  </div> <!-- Navbar container -->
+
+
+  <!-- hero section -->
+
+  <div class="container mx-auto flex flex-col md:flex-row text-center md:items-center">
+      <div class="m-1">
+        <h1 class=" text-transparent bg-clip-text bg-gradient-to-r from-brand to-indigo-500  font-extrabold text-xl md:text-5xl subpixel-antialiased my-2">
+          Mindfulness.
+        </h1>
+
+        <p class="text-gray-600 font-medium text-sm md:text-lg subpixel-antialiased my-1">/ˈmʌɪn(d)f(ʊ)lnəs/</p>
+
+        <p class="text-gray-600 italic text-sm md:text-base  my-2 subpixel-antialiased">A mental state achieved by focusing one's awareness on the present moment, while calmly acknowledging and accepting one's feelings, thoughts, and bodily sensations, used as a therapeutic technique.</p>
+
+        <button class="bg-gradient-to-r from-brand to-indigo-500 text-white hover:-translate-y-0.5 hover:scale-105 duration-300 transform transition inline-flex items-center rounded-lg px-2 py-2 shadow-lg my-2 ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current text-white mr-1 subpixel-antialiased" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="subpixel-antialiased">Play Video</span> 
+        </button>
+      </div>
+
+      <div class="h-auto -p-2"><lottie-player src="/img/yoga-hero.json" background="transparent"  speed="1"  loop autoplay></lottie-player> 
+      </div>
+ </div>
+
+<!-- about section -->
+ <div class="container mx-auto justify-center">
+   <hr>
+
+  <h1 class=" text-transparent bg-clip-text bg-gradient-to-r mx-2 from-brand to-indigo-500  font-semibold text-lg md:text-3xl subpixel-antialiased mt-10 mb-5 text-center">
+    Mindfulness can be practiced by everyone
+  </h1>
+
+  <div class=" flex flex-col md:flex-row justify-center">
+
+      <div class="flex flex-col  justify-items-center shadow rounded-lg  bg-brand m-2 text-white text-center duration-300 hover:-translate-y-0.5 hover:bg-brand-dark  transform transition">  
+        <a href="">
+          <img class="rounded-t-lg w-full"  src="/assets/Children.c5694a6f.svg" alt="Children Mindfulness">
+          <p class="subpixel-antialiased m-2">Practice mindfulness from a young age</p>
+
+          <div class="inline-flex items-center text-center justify-center mb-2">
+              <p class="subpixel-antialiased font-semibold -mt-1"><a href="">Learn More</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current subpixel-antialiased mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+          </div> 
+        </a>
+      </div>
+
+      <div class="flex flex-col shadow rounded-lg bg-brand m-2 text-white text-center duration-300 hover:-translate-y-0.5 hover:bg-brand-dark  transform transition">  
+        <a href="">
+          <img class="rounded-t-lg w-full"  src="/assets/Office.abf6c98e.svg" alt="Work Mindfulness">
+          <p class=" subpixel-antialiased m-2">Be more productive at work</p>
+  
+          <div class="inline-flex items-center text-center justify-center mb-2">
+              <p class="subpixel-antialiased font-semibold -mt-1"><a href="">Learn More</a></p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current subpixel-antialiased mx-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+          </div> 
+        </a>
+    </div>
+
+    
+
+    <div class="flex flex-col shadow rounded-lg bg-brand m-2 text-white text-center duration-300 hover:-translate-y-0.5 hover:bg-brand-dark  transform transition">  
+      <a href="#">
+        <img class="rounded-t-lg w-full"  src="/assets/Home.6122f4e7.svg" alt="Home Mindfulness">
+        <p class=" subpixel-antialiased m-2">Mindfulness at home</p>
+  
+        <div class="inline-flex items-center justify-center mb-2">
+            <p class="subpixel-antialiased font-semibold -mt-1"><a href="">Learn More</a></p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current subpixel-antialiased mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </div> 
+      </a>
+  </div>
+
+  </div>
+
+ </div>
+
+ <!-- articles section -->
+
+   <div class="container mx-auto my-20">
+
+    <hr>
+
+    <h1 class=" text-transparent bg-clip-text bg-gradient-to-r from-brand to-indigo-500  font-semibold text-lg md:text-3xl subpixel-antialiased mt-10 mb-5 text-center">
+      Articles
+    </h1>
+
+    <!-- mosaic grid start -->
+      <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-2 m-4">
+        
+       <div class="group row-span-2 overflow-hidden rounded-lg">
+          <a href="">
+            <figure>
+                <img class="rounded-lg  bg-center duration-300 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1538024333176-f25f63f873ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="">
+                <figcaption class="absolute text-lg -mt-20 text-white px-4 text-left ">
+                    <h1 class="font-medium">Being Mindful</h1>
+                    <p class="text-sm">10 reasons to practice mindfulness</p>
+                </figcaption>
+            </figure>
+          </a>
+        </div>
+      
+       <div>
+        <a href="">
+          <figure class="bg-black overflow-hidden rounded-lg"> 
+              <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+              <figcaption class="absolute text-lg -mt-20 text-white px-4 text-left  ">
+                  <h1 class="font-medium">Mindful Thinking</h1>
+                  <p class="text-sm">7 Ways to Stop Ruminating and Overthinking</p>
+              </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div>
+        <a href="">
+          <figure class="bg-black overflow-hidden rounded-lg"> 
+            <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            <figcaption class="absolute text-lg -mt-20 text-white px-4">
+                <h1 class="font-medium">Eat Healthy</h1>
+                <p class="text-sm">How to Eat Mindfully</p>
+            </figcaption>
+        </figure>
+       </a>  
+      </div>
+
+      <div class="place-self-stretch ">
+          <a href="">
+            <figure class="bg-black overflow-hidden rounded-lg">
+                <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1512907061591-6b2fe3369082?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1038&q=80" alt="">
+                <figcaption class="absolute text-lg -mt-20 mb text-white px-4 text-left ">
+                    <h1 class="font-medium">Living in Present Moment </h1>
+                    <p class="text-sm">23 tools and exercises</p>
+                </figcaption>
+            </figure>
+          </a>
+      </div>
+
+      <div class="place-self-end row-span-2">
+         <a href="">
+            <figure class="bg-black overflow-hidden rounded-lg"> 
+                <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1513097847644-f00cfe868607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80" alt="">
+                <figcaption class="absolute text-lg -mt-20 text-white px-4 text-left  ">
+                    <h1 class="font-medium">Practice Yoga</h1>
+                    <p class="text-sm">How yoga helps rejuvenate your mind</p>
+                </figcaption>
+            </figure>
+          </a>
+      </div>
+
+      <div>
+        <a href="">
+            <figure class="bg-black overflow-hidden rounded-lg"> 
+                <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1614518920881-532c6bc24802?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="">
+                <figcaption class="absolute text-lg -mt-20  text-white px-4 text-left  ">
+                    <h1 class="font-medium">Mindfulness at Work</h1>
+                    <p class="text-sm overflow-ellipsis overflow-hidden">How mindfulness at work increase productivity</p>
+                </figcaption>
+            </figure>
+          </a>
+      </div>
+
+      <div class="place-self-end">
+        <a href="">
+            <figure class="bg-black overflow-hidden rounded-lg">
+                <img class="rounded-lg bg-gradient-to-t from-black opacity-70 hover:-translate-y-0.5 hover:scale-105 transition transform" src="https://images.unsplash.com/photo-1603561095848-4878d84bd726?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                <figcaption class="absolute text-lg -mt-20  text-white px-4 text-left ">
+                    <h1 class="font-medium">Take a mindful walk</h1>
+                    <p class="text-sm">5 benefits of taking a mindful walk</p>
+                </figcaption>
+            </figure>
+          </a>
+        </div>
+
+      </div> <!-- mosaic grid end -->
+   </div>
+
+
+    <!-- Subscription cards -->
+    <div class="container mx-auto my-20 justify-center ">
+      <hr>
+
+      <h1 class=" text-transparent bg-clip-text bg-gradient-to-r mx-2 from-brand to-indigo-500  font-semibold text-lg md:text-3xl subpixel-antialiased mt-10 mb-5 text-center">
+        Pricing
+      </h1>
+
+      <div class=" flex flex-col md:flex-row justify-center mx-4">
+ 
+          <div class="bg-white container my-2  flex flex-col border border-gray-200 text-center rounded-md hover:shadow-xl hover:border-brand-light">
+            <h1 class="h-10 rounded-t-xm font-semibold mt-4 text-xl subpixel-antialiased ">Basic</h1>
+            <hr class="opacity-50">
+            <p class="font-bold text-4xl m-2 subpixel-antialiased text-gray-700 "> ₹ 1999/-</p>
+            <p class="text-sm italic font-light text-gray-500 my-2 subpixel-antialiased">Per Month</p>
+            <p class="subpixel-antialiased ">10 hours of courses</p>
+            <p class="subpixel-antialiased">Lifetime free access</p>
+            <button ton class="bg-gradient-to-r my-4 from-brand to-indigo-500 text-white font-semibold w-28 p-1 text-center subpixel-antialiased rounded-md self-center  hover:-translate-y-0.5 hover:scale-105 duration-300 transform transition ">Get Started</button>
+          </div>
+
+          <div class="bg-indigo-50 container my-1  flex flex-col border border-indigo-100 text-center rounded-md justify-items-center shadow-xl hover:shadow-2xl hover:border-brand ">
+            <h1 class="h-10 rounded-t-xm font-semibold mt-4 text-xl subpixel-antialiased ">Value</h1>
+            <hr>
+            <p class="font-bold text-4xl m-2  text-gray-700 subpixel-antialiased"> ₹ 2999/-</p>
+            <p class="text-sm italic font-light text-gray-500 my-2 subpixel-antialiased">Per Month</p>
+            <p class="subpixel-antialiased">100 hours of courses</p>
+            <p class="subpixel-antialiased">Lifetime free access</p>
+            <button ton class="bg-gradient-to-r my-4 from-brand to-indigo-500 text-white font-semibold w-28 p-1 text-center subpixel-antialiased rounded-md self-center  hover:-translate-y-0.5 hover:scale-105 duration-300 transform transition ">Get Started</button>
+          </div>
+
+          <div class="bg-white container flex my-2 flex-col border border-gray-200 text-center rounded-md justify-items-center hover:shadow-xl hover:border-brand-light">
+            <h1 class="h-10 rounded-t-xm font-semibold mt-4 text-xl subpixel-antialiased">Premium</h1>
+            <hr class="opacity-50">
+            <p class="font-bold text-4xl m-2 text-gray-700 subpixel-antialiased"> ₹ 5999/-</p>
+            <p class="text-sm italic font-light text-gray-500 my-2 subpixel-antialiased">Per Month</p>
+            <p class="subpixel-antialiased">Unlimited hours of courses</p>
+            <p class="subpixel-antialiased">Lifetime free access</p>
+            <button ton class="bg-gradient-to-r my-4 from-brand to-indigo-500 text-white font-semibold w-28 p-1 text-center subpixel-antialiased rounded-md self-center  hover:-translate-y-0.5 hover:scale-105 duration-300 transform transition ">Get Started</button>
+          </div>
+     </div>
+
+   </div>
+</div>  <!-- Body wrapper end -->
+
+  <div class="bg-gray-600  mx-auto text-gray-400 p-4 flex flex-col place-content-around text-center">   
+    <div class="my-2">
+      <form class="italic">
+        <label class="m-2 " for="fname">Subscribe to our Newsletter </label>
+        <input  class="italic py-1 rounded-sm focus:outline-none focus:ring-4 ring-brand focus:border-brand"  type="email" id="email" name="email" placeholder=" Email Address">
+        <input class="mx-1 px-2 py-1 rounded-sm bg-white text-brand cursor-pointer text-center font-medium text-sm " type="submit" value="Sign Up">
+      </form>
+    </div>
+     <div class="mt-2 italic">
+      Copyright © 2021 Mind-e corporation. All rights reserved.
+    </div>
+    <div class="mt-2 italic underline text-gray-300">
+      <a href="https://www.raghubhat.com/">Designed by raghubhat.com</a>
+     
+    </div>
+  </div>
+
+  <!-- lottie player js -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
